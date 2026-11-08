@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- responsividade  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café do Largo | Cafés e sabores</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 p-3 bg-white" href="#conteudo">
+        Pular para o conteúdo
+    </a>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Navegação principal">
+
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">Café do Largo<span class="text-info">.</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir ou fechar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#oficinas">Cardápio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agenda">Combos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <section id="inicio" class="container py-5" aria-labelledby="tituloInicio">
+
+            <p class="text-primary fw-semibold mb-2">CAFÉ FRESQUINHO, TODOS OS DIAS</p>
+            <h1 id="tituloInicio" class="display-5 fw-bold">Um café e uma boa pausa.</h1>
+            <p class="lead text-body-secondary mb-4">Cafés, doces e pequenos momentos para saborear sem pressa.</p>
+
+            <!-- carrossel -->
+            <div id="carrosselDestaques" class="carousel slide rounded-3 overflow-hidden"
+                role="region" aria-roledescription="carrossel" aria-label="Destaques da cafeteria">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1: Café fresquinho"></button>
+                    <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="1"
+                        aria-label="Slide 2: Doces da casa"></button>
+                    <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="2"
+                        aria-label="Slide 3: Sua pausa"></button>
+                </div>
+
+                <div class="carousel-inner" aria-live="polite">
+
+                    <div class="carousel-item active">
+                        <div class="conteudo-slide bg-primary text-white text-center">
+                            <p class="mb-2">01 / DIRETO DA XÍCARA</p>
+                            <h2 class="fw-bold">Seu dia começa com café</h2>
+                            <p class="mb-0">Espresso ou coado, sempre preparado na hora.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteudo-slide bg-dark text-white text-center">
+                            <p class="mb-2">02 / FEITOS PARA ACOMPANHAR</p>
+                            <h2 class="fw-bold">Um doce para cada momento</h2>
+                            <p class="mb-0">Bolos e cookies que combinam com a sua bebida favorita.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="conteudo-slide bg-success text-white text-center">
+                            <p class="mb-2">03 / FIQUE MAIS UM POUCO</p>
+                            <h2 class="fw-bold">Sua pausa tem lugar aqui</h2>
+                            <p class="mb-0">Puxe uma cadeira, escolha seu café e aproveite a conversa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Slide anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo slide</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- card -->
+        <section id="oficinas" class="container pb-5" aria-labelledby="tituloOficinas">
+            <h2 id="tituloOficinas" class="fw-bold">Os favoritos da casa</h2>
+            <p class="text-body-secondary mb-4">Três boas escolhas para acompanhar o seu dia.</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <article class="card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-primary mb-3">Clássico da casa</span>
+                            <h3 class="card-title h4">Espresso</h3>
+                            <p class="card-text text-body-secondary">Café encorpado, aroma marcante e uma camada de crema. Pequeno no tamanho, intenso no sabor.</p>
+                            <p class="small mb-0">R$ 7,00 · Xícara de 50 ml</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a class="btn btn-outline-primary" href="#contato">Perguntar sobre o espresso</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-primary mb-3">Cremoso na medida</span>
+                            <h3 class="card-title h4">Cappuccino</h3>
+                            <p class="card-text text-body-secondary">Espresso com leite vaporizado e espuma cremosa, finalizado com um toque de canela.</p>
+                            <p class="small mb-0">R$ 13,00 · Xícara de 180 ml</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a class="btn btn-outline-primary" href="#contato">Perguntar sobre o cappuccino</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-primary mb-3">Para aquecer</span>
+                            <h3 class="card-title h4">Chocolate quente</h3>
+                            <p class="card-text text-body-secondary">Chocolate com leite, textura aveludada e sabor aconchegante para os dias mais tranquilos.</p>
+                            <p class="small mb-0">R$ 14,00 · Xícara de 200 ml</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a class="btn btn-outline-primary" href="#contato">Perguntar sobre o chocolate</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#modalOficinas">
+                Conheça o Café do Largo
+            </button>
+        </section>
+
+        <section id="agenda" class="bg-body-tertiary border-top border-bottom py-5" aria-labelledby="tituloAgenda">
+            <div class="container">
+                <h2 id="tituloAgenda" class="fw-bold">Combinações que dão certo</h2>
+                <p class="text-body-secondary">Sua bebida favorita com um acompanhamento especial.</p>
+
+                <!-- tabela -->
+                <div class="table-responsive" role="region" aria-label="Combos da cafeteria, com rolagem horizontal" tabindex="0">
+                    <table class="table table-striped table-hover align-middle">
+                        <caption>Combos individuais disponíveis durante o horário de atendimento.</caption>
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Combo</th>
+                                <th scope="col">Bebida</th>
+                                <th scope="col">Acompanhamento</th>
+                                <th scope="col">Porção</th>
+                                <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr><th scope="row">Bom dia</th><td>Café coado</td><td>Pão de queijo</td><td>Individual</td><td>R$ 13,00</td></tr>
+                            <tr><th scope="row">Pausa clássica</th><td>Espresso</td><td>Cookie de chocolate</td><td>Individual</td><td>R$ 15,00</td></tr>
+                            <tr><th scope="row">Doce encontro</th><td>Cappuccino</td><td>Fatia de bolo de cenoura</td><td>Individual</td><td>R$ 23,00</td></tr>
+                            <tr><th scope="row">Tarde leve</th><td>Chá de camomila</td><td>Torradas com geleia</td><td>Individual</td><td>R$ 18,00</td></tr>
+                            <tr><th scope="row">Aconchego</th><td>Chocolate quente</td><td>Cookie de baunilha</td><td>Individual</td><td>R$ 22,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-body-secondary mb-0">Consulte a equipe sobre ingredientes, alergênicos e disponibilidade.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="container py-5" aria-labelledby="tituloContato">
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <h2 id="tituloContato" class="fw-bold">Fale com a gente</h2>
+                    <p class="text-body-secondary">Tem alguma dúvida sobre o cardápio ou quer saber mais sobre a cafeteria? Conte para a gente.</p>
+                    <p id="avisoFormulario" class="small text-body-secondary">Todos os campos são obrigatórios. O envio on-line está indisponível no momento.</p>
+                </div>
+
+                <div class="col-12 col-lg-8">
+
+                    <!-- formularios -->
+                    <form id="formularioContato" aria-describedby="avisoFormulario">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome"
+                                    autocomplete="name" minlength="2" maxlength="100" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="oficina" class="form-label">Assunto</label>
+                                <select class="form-select" id="oficina" name="oficina" required>
+                                    <option value="" selected disabled>Selecione um assunto</option>
+                                    <option value="html-css">Dúvidas sobre o cardápio</option>
+                                    <option value="bootstrap">Encontros e eventos</option>
+                                    <option value="javascript">Outros assuntos</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4"
+                                    minlength="10" maxlength="1000" required></textarea>
+                                <div class="form-text">Escreva entre 10 e 1.000 caracteres.</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Conferir mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- return -->
+                    <div id="retornoFormulario" class="alert alert-success mt-3 mb-0" role="status" hidden></div>
+                    <noscript><p class="mt-3">Não tem ativo o JavaScript para usar o formulário e a navegação interativa.</p></noscript>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+            <p class="mb-0">Café do Largo · Café, sabor e boas conversas</p>
+            <a class="link-light" href="#inicio">Voltar ao início</a>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="modalOficinas" tabindex="-1" aria-labelledby="tituloModal"
+        aria-describedby="descricaoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloModal">Conheça o Café do Largo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar janela"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="descricaoModal">Um lugar para fazer uma pausa, encontrar pessoas queridas e aproveitar um café preparado na hora.</p>
+                    <ul class="mb-3">
+                        <li>Cafés quentes e bebidas cremosas.</li>
+                        <li>Bolos, cookies e acompanhamentos.</li>
+                        <li>Um ambiente acolhedor para ficar à vontade.</li>
+                    </ul>
+                    <p class="small text-body-secondary mb-0">Quer conhecer melhor o cardápio? Fale com a nossa equipe.</p>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="botaoIrContato" data-bs-dismiss="modal">Falar com a equipe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- implementa o bundle sem jQuery e depois o script.js porque ele ja vai acessar os componentes e os campos carregados. -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

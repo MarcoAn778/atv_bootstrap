@@ -1,0 +1,15 @@
+section {
+    scroll-margin-top: 1rem;
+}
+
+/* ajuste */
+.conteudo-slide {
+    min-height: 300px;
+    padding: 4rem 18% 5rem;
+}
+
+/* nowrap mantém as células inteiras;*/
+.table th,
+.table td {
+    white-space: nowrap;
+}

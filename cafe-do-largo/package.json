@@ -1,0 +1,17 @@
+{
+  "name": "cafe-do-largo",
+  "version": "1.0.0",
+  "description": "Site do Café do Largo com Bootstrap instalado pelo npm.",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 0.0.0.0",
+    "check": "node --check bootstrap/js/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "private": true
+}
