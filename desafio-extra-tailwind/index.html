@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth motion-reduce:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café do Largo: cafés, doces e pequenos momentos para saborear sem pressa."
+    />
+    <title>Café do Largo</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bg-white font-sans text-slate-800 leading-relaxed">
+    <a
+      href="#conteudo"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:p-3 focus:text-blue-700"
+      >Pular para o conteúdo</a
+    >
+
+    <header class="bg-slate-900 text-white">
+      
+      <nav
+        aria-label="Navegação principal"
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4"
+      >
+        <a href="#inicio" class="text-xl font-bold">Café do Largo</a>
+        <button
+          id="botao-menu"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="rounded border border-slate-500 px-3 py-2 text-2xl leading-none hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:hidden"
+        >
+          ☰
+        </button>
+        <ul
+          id="menu"
+          class="hidden w-full flex-col gap-1 lg:flex lg:w-auto lg:flex-row lg:gap-4"
+        >
+          <li>
+            <a href="#inicio" class="block rounded px-2 py-2 hover:bg-slate-700"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a
+              href="#oficinas"
+              class="block rounded px-2 py-2 hover:bg-slate-700"
+              >Cardápio</a
+            >
+          </li>
+          <li>
+            <a href="#agenda" class="block rounded px-2 py-2 hover:bg-slate-700"
+              >Combos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contato"
+              class="block rounded px-2 py-2 hover:bg-slate-700"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="mx-auto max-w-6xl px-4">
+      <section id="inicio" aria-labelledby="titulo-inicio" class="py-10">
+        <p class="mb-2 text-sm font-bold tracking-widest text-blue-700">
+          CAFÉ FRESQUINHO, TODOS OS DIAS
+        </p>
+        <h1
+          id="titulo-inicio"
+          class="text-3xl font-bold tracking-tight md:text-5xl"
+        >
+          Um café e uma boa pausa.
+        </h1>
+        <p class="mt-4 mb-8 text-lg text-slate-600">
+          Cafés, doces e pequenos momentos para saborear sem pressa.
+        </p>
+        <!-- carrossel -->
+        <div
+          id="carrossel"
+          role="region"
+          aria-roledescription="carrossel"
+          aria-label="Destaques da cafeteria"
+          tabindex="0"
+          class="overflow-hidden rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
+        >
+          <div
+            id="trilho"
+            class="flex transition-transform duration-500 ease-in-out motion-reduce:transition-none"
+          >
+            <article
+              data-slide
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 de 3"
+              class="flex min-h-72 min-w-full flex-col justify-center bg-blue-700 px-6 py-10 text-white md:px-14"
+            >
+              <p class="text-sm font-bold tracking-wider">
+                01 / DIRETO DA XÍCARA
+              </p>
+              <h2 class="mt-3 text-3xl font-bold md:text-4xl">
+                Seu dia começa com café
+              </h2>
+              <p class="mt-4 text-lg">
+                Espresso ou coado, sempre preparado na hora.
+              </p>
+            </article>
+            <article
+              data-slide
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 de 3"
+              aria-hidden="true"
+              inert
+              class="flex min-h-72 min-w-full flex-col justify-center bg-slate-800 px-6 py-10 text-white md:px-14"
+            >
+              <p class="text-sm font-bold tracking-wider">
+                02 / FEITOS PARA ACOMPANHAR
+              </p>
+              <h2 class="mt-3 text-3xl font-bold md:text-4xl">
+                Um doce para cada momento
+              </h2>
+              <p class="mt-4 text-lg">
+                Bolos e cookies que combinam com a sua bebida favorita.
+              </p>
+            </article>
+            <article
+              data-slide
+              role="group"
+              aria-roledescription="slide"
+              aria-label="3 de 3"
+              aria-hidden="true"
+              inert
+              class="flex min-h-72 min-w-full flex-col justify-center bg-emerald-800 px-6 py-10 text-white md:px-14"
+            >
+              <p class="text-sm font-bold tracking-wider">
+                03 / FIQUE MAIS UM POUCO
+              </p>
+              <h2 class="mt-3 text-3xl font-bold md:text-4xl">
+                Sua pausa tem lugar aqui
+              </h2>
+              <p class="mt-4 text-lg">
+                Puxe uma cadeira, escolha seu café e aproveite a conversa.
+              </p>
+            </article>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-between gap-3 bg-slate-100 p-3"
+          >
+            <button
+              id="anterior"
+              type="button"
+              aria-label="Slide anterior"
+              class="rounded px-3 py-2 font-semibold text-blue-800 hover:bg-slate-200"
+            >
+              ← Anterior
+            </button>
+            <div class="flex gap-2" aria-label="Escolher destaque">
+              <button
+                data-indicador="0"
+                type="button"
+                aria-label="Ir para slide 1"
+                aria-current="true"
+                class="h-10 w-10 rounded-full border border-blue-700 bg-blue-700 text-white hover:opacity-80"
+              >
+                1
+              </button>
+              <button
+                data-indicador="1"
+                type="button"
+                aria-label="Ir para slide 2"
+                class="h-10 w-10 rounded-full border border-blue-700 bg-white text-blue-700 hover:opacity-80"
+              >
+                2
+              </button>
+              <button
+                data-indicador="2"
+                type="button"
+                aria-label="Ir para slide 3"
+                class="h-10 w-10 rounded-full border border-blue-700 bg-white text-blue-700 hover:opacity-80"
+              >
+                3
+              </button>
+            </div>
+            <button
+              id="proximo"
+              type="button"
+              aria-label="Próximo slide"
+              class="rounded px-3 py-2 font-semibold text-blue-800 hover:bg-slate-200"
+            >
+              Próximo →
+            </button>
+          </div>
+          <p
+            id="status-slide"
+            class="sr-only"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            Slide 1 de 3
+          </p>
+        </div>
+      </section>
+
+      <!-- cards -->
+      <section
+        id="oficinas"
+        aria-labelledby="titulo-cardapio"
+        class="border-t border-slate-200 py-10"
+      >
+        <h2 id="titulo-cardapio" class="text-2xl font-bold md:text-3xl">
+          Os favoritos da casa
+        </h2>
+        <p class="mt-2 mb-6 text-slate-600">
+          Três boas escolhas para acompanhar o seu dia.
+        </p>
+        <div
+          id="cards"
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <article
+            class="flex flex-col rounded-lg border border-slate-200 p-6 shadow-sm"
+          >
+            <span
+              class="self-start rounded bg-blue-100 px-2 py-1 text-sm font-semibold text-blue-800"
+              >Clássico da casa</span
+            >
+            <h3 class="mt-4 text-xl font-bold">Espresso</h3>
+            <p class="mt-3 flex-1">
+              Café encorpado, aroma marcante e uma camada de crema. Pequeno no
+              tamanho, intenso no sabor.
+            </p>
+            <p class="mt-4 font-semibold">R$ 7,00 · Xícara de 50 ml</p>
+            <a
+              href="#contato"
+              class="mt-5 rounded border border-blue-700 px-3 py-2 text-center text-blue-700 hover:bg-blue-50"
+              >Perguntar sobre o espresso</a
+            >
+          </article>
+          <article
+            class="flex flex-col rounded-lg border border-slate-200 p-6 shadow-sm"
+          >
+            <span
+              class="self-start rounded bg-blue-100 px-2 py-1 text-sm font-semibold text-blue-800"
+              >Cremoso na medida</span
+            >
+            <h3 class="mt-4 text-xl font-bold">Cappuccino</h3>
+            <p class="mt-3 flex-1">
+              Espresso com leite vaporizado e espuma cremosa, finalizado com um
+              toque de canela.
+            </p>
+            <p class="mt-4 font-semibold">R$ 13,00 · Xícara de 180 ml</p>
+            <a
+              href="#contato"
+              class="mt-5 rounded border border-blue-700 px-3 py-2 text-center text-blue-700 hover:bg-blue-50"
+              >Perguntar sobre o cappuccino</a
+            >
+          </article>
+          <article
+            class="flex flex-col rounded-lg border border-slate-200 p-6 shadow-sm"
+          >
+            <span
+              class="self-start rounded bg-blue-100 px-2 py-1 text-sm font-semibold text-blue-800"
+              >Para aquecer</span
+            >
+            <h3 class="mt-4 text-xl font-bold">Chocolate quente</h3>
+            <p class="mt-3 flex-1">
+              Chocolate com leite, textura aveludada e sabor aconchegante para
+              os dias mais tranquilos.
+            </p>
+            <p class="mt-4 font-semibold">R$ 14,00 · Xícara de 200 ml</p>
+            <a
+              href="#contato"
+              class="mt-5 rounded border border-blue-700 px-3 py-2 text-center text-blue-700 hover:bg-blue-50"
+              >Perguntar sobre o chocolate</a
+            >
+          </article>
+        </div>
+        <button
+          id="abrir-modal"
+          type="button"
+          class="mt-6 rounded bg-blue-700 px-4 py-3 font-semibold text-white hover:bg-blue-800"
+        >
+          Conheça o Café do Largo
+        </button>
+      </section>
+
+      <!-- tabela -->
+      <section
+        id="agenda"
+        aria-labelledby="titulo-combos"
+        class="border-t border-slate-200 py-10"
+      >
+        <h2 id="titulo-combos" class="text-2xl font-bold md:text-3xl">
+          Combinações que dão certo
+        </h2>
+        <p class="mt-2 mb-6 text-slate-600">
+          Sua bebida favorita com um acompanhamento especial.
+        </p>
+        <!-- tabela -->
+        <div
+          id="tabela-rolagem"
+          role="region"
+          aria-label="Combos: role horizontalmente em telas pequenas"
+          tabindex="0"
+          class="overflow-x-auto rounded-lg border border-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-700"
+        >
+          <table class="w-full border-collapse whitespace-nowrap text-left">
+            <caption
+              class="caption-bottom p-3 text-left text-sm text-slate-600"
+            >
+              Combos individuais disponíveis durante o horário de atendimento.
+            </caption>
+            <thead class="bg-slate-800 text-white">
+              <tr>
+                <th scope="col" class="px-4 py-3">Combo</th>
+                <th scope="col" class="px-4 py-3">Bebida</th>
+                <th scope="col" class="px-4 py-3">Acompanhamento</th>
+                <th scope="col" class="px-4 py-3">Porção</th>
+                <th scope="col" class="px-4 py-3">Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-b border-slate-200 odd:bg-slate-50 hover:bg-blue-50"
+              >
+                <th scope="row" class="px-4 py-3 font-semibold">Bom dia</th>
+                <td class="px-4 py-3">Café coado</td>
+                <td class="px-4 py-3">Pão de queijo</td>
+                <td class="px-4 py-3">Individual</td>
+                <td class="px-4 py-3">R$ 13,00</td>
+              </tr>
+              <tr
+                class="border-b border-slate-200 odd:bg-slate-50 hover:bg-blue-50"
+              >
+                <th scope="row" class="px-4 py-3 font-semibold">
+                  Pausa clássica
+                </th>
+                <td class="px-4 py-3">Espresso</td>
+                <td class="px-4 py-3">Cookie de chocolate</td>
+                <td class="px-4 py-3">Individual</td>
+                <td class="px-4 py-3">R$ 15,00</td>
+              </tr>
+              <tr
+                class="border-b border-slate-200 odd:bg-slate-50 hover:bg-blue-50"
+              >
+                <th scope="row" class="px-4 py-3 font-semibold">
+                  Doce encontro
+                </th>
+                <td class="px-4 py-3">Cappuccino</td>
+                <td class="px-4 py-3">Fatia de bolo de cenoura</td>
+                <td class="px-4 py-3">Individual</td>
+                <td class="px-4 py-3">R$ 23,00</td>
+              </tr>
+              <tr
+                class="border-b border-slate-200 odd:bg-slate-50 hover:bg-blue-50"
+              >
+                <th scope="row" class="px-4 py-3 font-semibold">Tarde leve</th>
+                <td class="px-4 py-3">Chá de camomila</td>
+                <td class="px-4 py-3">Torradas com geleia</td>
+                <td class="px-4 py-3">Individual</td>
+                <td class="px-4 py-3">R$ 18,00</td>
+              </tr>
+              <tr class="odd:bg-slate-50 hover:bg-blue-50">
+                <th scope="row" class="px-4 py-3 font-semibold">Aconchego</th>
+                <td class="px-4 py-3">Chocolate quente</td>
+                <td class="px-4 py-3">Cookie de baunilha</td>
+                <td class="px-4 py-3">Individual</td>
+                <td class="px-4 py-3">R$ 22,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Consulte a equipe sobre ingredientes, alergênicos e disponibilidade.
+        </p>
+      </section>
+
+      <!-- formulario  -->
+      <section
+        id="contato"
+        aria-labelledby="titulo-contato"
+        class="border-t border-slate-200 py-10"
+      >
+        <h2 id="titulo-contato" class="text-2xl font-bold md:text-3xl">
+          Fale com a gente
+        </h2>
+        <p class="mt-2 text-slate-600">
+          Tem alguma dúvida sobre o cardápio ou quer saber mais sobre a
+          cafeteria? Conte para a gente.
+        </p>
+        <p id="aviso-formulario" class="mt-3 mb-6 text-sm text-slate-600">
+          Todos os campos são obrigatórios. O envio on-line está indisponível no
+          momento.
+        </p>
+        
+        <form
+          id="formulario"
+          aria-describedby="aviso-formulario"
+          class="grid grid-cols-1 gap-5 md:grid-cols-2"
+        >
+          <div>
+            <label for="nome" class="mb-2 block font-semibold">Nome</label
+            ><input
+              id="nome"
+              name="nome"
+              type="text"
+              autocomplete="name"
+              required
+              minlength="2"
+              maxlength="100"
+              class="w-full rounded border border-slate-400 px-3 py-2 focus:border-blue-700 focus:outline focus:outline-2 focus:outline-blue-700"
+            />
+          </div>
+          <div>
+            <label for="email" class="mb-2 block font-semibold">E-mail</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              class="w-full rounded border border-slate-400 px-3 py-2 focus:border-blue-700 focus:outline focus:outline-2 focus:outline-blue-700"
+            />
+          </div>
+          <div class="md:col-span-2">
+            <label for="assunto" class="mb-2 block font-semibold">Assunto</label
+            ><select
+              id="assunto"
+              name="assunto"
+              required
+              class="w-full rounded border border-slate-400 bg-white px-3 py-2 focus:border-blue-700 focus:outline focus:outline-2 focus:outline-blue-700"
+            >
+              <option value="">Selecione um assunto</option>
+              <option value="cardapio">Dúvidas sobre o cardápio</option>
+              <option value="eventos">Encontros e eventos</option>
+              <option value="outros">Outros assuntos</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label for="mensagem" class="mb-2 block font-semibold"
+              >Mensagem</label
+            ><textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              required
+              minlength="10"
+              maxlength="1000"
+              class="w-full rounded border border-slate-400 px-3 py-2 focus:border-blue-700 focus:outline focus:outline-2 focus:outline-blue-700"
+            ></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <button
+              type="submit"
+              class="rounded bg-blue-700 px-4 py-3 font-semibold text-white hover:bg-blue-800"
+            >
+              Conferir mensagem
+            </button>
+          </div>
+          <p
+            id="feedback"
+            role="status"
+            class="hidden rounded border border-emerald-300 bg-emerald-50 p-4 text-emerald-900 md:col-span-2"
+          ></p>
+        </form>
+      </section>
+    
+    </main>
+    <!--dialog fornece foco contido e fechamento por Esc  -->
+    <dialog
+      id="modal"
+      aria-labelledby="titulo-modal"
+      aria-describedby="descricao-modal"
+      class="m-auto max-h-[90vh] w-[calc(100%-2rem)] max-w-lg overflow-y-auto rounded-lg border border-slate-200 bg-white p-6 text-slate-800 shadow-xl backdrop:bg-black/50"
+    >
+      <div class="flex items-start justify-between gap-4">
+        <h2 id="titulo-modal" class="text-2xl font-bold">
+          Conheça o Café do Largo
+        </h2>
+        <button
+          data-fechar-modal
+          type="button"
+          aria-label="Fechar janela"
+          autofocus
+          class="rounded px-3 py-1 text-2xl hover:bg-slate-100"
+        >
+          ×
+        </button>
+      </div>
+      <p id="descricao-modal" class="mt-4">
+        Um lugar para fazer uma pausa, encontrar pessoas queridas e aproveitar
+        um café preparado na hora.
+      </p>
+      <ul class="my-4 list-disc space-y-2 pl-6">
+        <li>Cafés quentes e bebidas cremosas</li>
+        <li>Bolos, cookies e acompanhamentos</li>
+        <li>Um ambiente acolhedor para ficar à vontade</li>
+      </ul>
+      <p>Quer conhecer melhor o cardápio? Fale com a nossa equipe.</p>
+      <div class="mt-6 flex flex-wrap justify-end gap-3">
+        <button
+          data-fechar-modal
+          type="button"
+          class="rounded border border-slate-400 px-4 py-2 hover:bg-slate-100"
+        >
+          Fechar</button
+        ><button
+          id="confirmar-modal"
+          type="button"
+          class="rounded bg-blue-700 px-4 py-2 font-semibold text-white hover:bg-blue-800"
+        >
+          Falar com a equipe
+        </button>
+      </div>
+    </dialog>
+
+    <footer class="bg-slate-900 text-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-6"
+      >
+        <p>Café do Largo · Café, sabor e boas conversas</p>
+        <a
+          href="#inicio"
+          class="underline underline-offset-4 hover:text-blue-200"
+          >Voltar ao início</a
+        >
+      </div>
+    </footer>
+    
+  </body>
+</html>

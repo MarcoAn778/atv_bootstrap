@@ -1,0 +1,15 @@
+{
+  "name": "cafe-do-largo-tailwind",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Café do Largo — versão independente com Tailwind CSS",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/tailwind.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/tailwind.css --watch",
+    "start": "npm run build && python3 -m http.server 8001 --bind 0.0.0.0",
+    "check": "node --check js/script.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
